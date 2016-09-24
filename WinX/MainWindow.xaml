@@ -5,8 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WinX"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+        Title="WinX" HorizontalAlignment="Left" VerticalAlignment="Top" Width="480" Height="320" IsTabStop="False"
+        FocusManager.FocusedElement="{Binding ElementName=textBoxInput}">
+    <Grid Background="#FF383838">
+        <TextBox x:Name="textBoxOutput" Margin="10,10,10,38" TextWrapping="Wrap" Text="" VerticalScrollBarVisibility="Auto" IsReadOnly="True" IsUndoEnabled="False" Background="#FF242424" Foreground="White" BorderBrush="Gray" SelectionBrush="#FFC8C8C8" Padding="4" UndoLimit="0" IsTabStop="False"/>
+        <TextBox x:Name="textBoxInput" Margin="10" Text="" VerticalContentAlignment="Center" VerticalScrollBarVisibility="Disabled" Height="23" VerticalAlignment="Bottom" Background="#FF242424" BorderBrush="Gray" Foreground="White" SelectionBrush="#FFC8C8C8" Padding="2,0"/>
     </Grid>
 </Window>
