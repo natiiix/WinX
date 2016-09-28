@@ -1,0 +1,14 @@
+﻿<Window x:Class="WinX.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WinX"
+        mc:Ignorable="d"
+        Title="WinX" HorizontalAlignment="Left" VerticalAlignment="Top" Width="480" Height="320" IsTabStop="False"
+        FocusManager.FocusedElement="{Binding ElementName=textBoxInput}" Loaded="Window_Loaded" Closing="Window_Closing">
+    <Grid Background="#FF383838">
+        <TextBox x:Name="textBoxOutput" Margin="10,10,10,38" TextWrapping="Wrap" Text="" VerticalScrollBarVisibility="Auto" IsReadOnly="True" IsUndoEnabled="False" Background="#FF242424" Foreground="White" BorderBrush="Gray" SelectionBrush="#FFC8C8C8" Padding="4" UndoLimit="0" IsTabStop="False" FontFamily="Lucida Console"/>
+        <TextBox x:Name="textBoxInput" Margin="10" Text="" VerticalContentAlignment="Center" VerticalScrollBarVisibility="Disabled" Height="23" VerticalAlignment="Bottom" Background="#FF242424" BorderBrush="Gray" Foreground="White" SelectionBrush="#FFC8C8C8" Padding="2,0" KeyDown="textBoxInput_KeyDown" FontFamily="Lucida Console"/>
+    </Grid>
+</Window>
